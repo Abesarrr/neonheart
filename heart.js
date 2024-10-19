@@ -274,3 +274,12 @@ function resizeCanvas() {
   
   window.addEventListener('resize', resizeCanvas);
   resizeCanvas(); // Panggil saat halaman dimuat
+
+  function addFooter() {
+	const footer = document.getElementById('footer');
+	const currentYear = new Date().getFullYear();
+	footer.innerHTML = `Created with ❤️ by Abesar`;
+  }
+  
+  // Panggil fungsi ini setelah window load
+  window.addEventListener('load', addFooter);
